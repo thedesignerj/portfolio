@@ -1118,7 +1118,18 @@ p {
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
       .footer_content .footer_social li a:hover {
-        color: #00A78E; }
+        color: #00A78E; 
+      animation: shake 1.5s;
+      }
+      @keyframes shake{
+        0% {
+transform: rotate(-20deg);
+        }
+        50% {
+          transform: rotate(20deg);
+                  }
+      }
+      
 .footer_content .email {
   font-size: 44px;
   font-weight: 600;
